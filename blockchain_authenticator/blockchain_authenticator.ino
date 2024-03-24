@@ -9,7 +9,7 @@
 #define LED_RED 6          // Pin for red LED
 
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
-
+const String verificationCode = "X.}3HUz%1cC6}HU4et8+";
 void setup() {
   Serial.begin(9600);
   pinMode(LED_GREEN, OUTPUT);
@@ -50,6 +50,8 @@ void loop() {
       if (voiceAuthenticated) {
         delay(1000);
         Serial.println("Voice authentication successful.");
+        Serial.print("Verification Code: ");
+        Serial.println(verificationCode);
         digitalWrite(LED_GREEN, HIGH); // Turn on green LED for successful voice authentication
         delay(1000); // Keep the LED on for 1 second
         digitalWrite(LED_GREEN, LOW); // Turn off green LED
