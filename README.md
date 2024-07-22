@@ -1,3 +1,7 @@
+##SMU 2024 HackTheChains Hackathon Project 
+We developed a blockchain authenticator using Arduino technology. This project involved creating a secure authentication system to leverage blockchain's decentralized features for enhanced security.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
